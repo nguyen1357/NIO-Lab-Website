@@ -1,2 +1,5 @@
 /admin/callback    /admin/callback.html   200
 /admin/callback/   /admin/callback/index.html  200
+/admin             /admin/index.html 200
+/admin/*           /admin/:splat 200
+/*                 /index.html 200

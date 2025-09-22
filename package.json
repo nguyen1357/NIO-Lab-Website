@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "node scripts/build.mjs",
     "build": "node scripts/content-build.mjs && node scripts/build.mjs --production",
-    "content": "node scripts/content-build.mjs",
-    "postbuild": "node scripts/copy-public.cjs"
+    "content": "node scripts/content-build.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",

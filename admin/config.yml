@@ -1,7 +1,8 @@
+local_backend: true
 # Decap CMS config for GitHub backend on Cloudflare Pages
 backend:
   name: github
-  repo: nguyen1357/NIO-Lab-Website   # ⬅️ Đổi thành owner/repo của bạn
+  repo: nguyen1357/NIO-Lab-Website
   branch: main
   auth_type: implicit                    # dùng OAuth App của GitHub
   # Sau khi trỏ domain, tạo GitHub OAuth App:
@@ -24,3 +25,8 @@ collections:
       - { label: "Description", name: "description", widget: "text", required: false }
       - { label: "External Link", name: "link", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: demopublickey

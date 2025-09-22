@@ -1,4 +1,4 @@
-local_backend: true
+local_backend: false
 # Decap CMS config for GitHub backend on Cloudflare Pages
 backend:
   name: github

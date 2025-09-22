@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: <YOUR_GITHUB_USER>/<YOUR_REPO>   # TODO: đổi thành owner/repo thật, ví dụ: nguyenv1357/NIO-Lab-Website
+  repo: nguyen1357/NIO-Lab-Website   # TODO: đổi thành owner/repo thật, ví dụ: nguyenv1357/NIO-Lab-Website
   branch: main
   auth_type: implicit
 

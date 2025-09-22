@@ -11,8 +11,9 @@ export default function App() {
         <nav style={{display:'flex', gap:16, alignItems:'center'}}>
           <Link to="/" style={{fontWeight:700, textDecoration:'none', color:'#0f172a'}}>NIO Lab</Link>
           <div style={{display:'flex', gap:12}}>
-            <Link to="/" style={{textDecoration:'none'}}>Home</Link>
-            <Link to="/news" style={{textDecoration:'none'}}>News</Link>
+            <Link to="/#/" style={{textDecoration:'none'}}>Home</Link>
+            <Link to="/#/news" style={{textDecoration:'none'}}>News</Link>
+            <a href="/admin" style={{textDecoration:'none'}}>Admin</a>
           </div>
         </nav>
       </header>

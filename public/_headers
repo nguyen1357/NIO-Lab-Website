@@ -1,5 +1,0 @@
-/content/*
-  Cache-Control: no-store
-
-/admin/*
-  Cache-Control: no-store

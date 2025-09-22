@@ -29,7 +29,6 @@ export const onRequestGet: PagesFunction = async ({ request, env }) => {
           window.opener.postMessage({ token: '${data.access_token}' }, '*');
         }
       }catch(e){}
-      // luôn điều hướng về /admin kèm token để Decap đọc được
       window.location.replace('/admin/#access_token=' + '${token}');
     })();
   </script>`;

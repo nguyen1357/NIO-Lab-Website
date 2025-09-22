@@ -17,12 +17,12 @@
             name: 'github',
             repo: 'nguyen1357/NIO-Lab-Website',
             branch: 'main',
-            base_url: window.location.origin,
+            base_url: window.location.origin,   // Cloudflare Pages Functions proxy
             auth_endpoint: '/api/auth'
           },
           site_domain: window.location.hostname,
-          media_folder: 'public/uploads',
-          public_folder: '/uploads',
+          media_folder: 'uploads',       // files will be committed here
+          public_folder: '/uploads',     // how files are referenced in site
           collections: [
             {
               name: 'posts',
@@ -40,8 +40,8 @@
               ]
             }
           ]
-        }
-        CMS.init({ config })
+        };
+        CMS.init({ config });
       })();
     </script>
   </body>

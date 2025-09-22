@@ -1,7 +1,7 @@
 # Decap CMS config for GitHub backend on Cloudflare Pages
 backend:
   name: github
-  repo: <YOUR_GITHUB_USER>/<YOUR_REPO>   # ⬅️ Đổi thành owner/repo của bạn
+  repo: nguyen1357/NIO-Lab-Website   # ⬅️ Đổi thành owner/repo của bạn
   branch: main
   auth_type: implicit                    # dùng OAuth App của GitHub
   # Sau khi trỏ domain, tạo GitHub OAuth App:

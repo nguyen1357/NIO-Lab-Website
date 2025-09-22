@@ -4,7 +4,13 @@
   "scripts": {
     "dev": "node scripts/build.mjs",
     "build": "node scripts/content-build.mjs && node scripts/build.mjs --production",
-    "content": "node scripts/content-build.mjs"
+    "content": "node scripts/content-build.mjs",
+    "postbuild": "node scripts/copy-public.cjs",
+    "serve": "npx serve -l 3000 dist",
+    "decap": "npx decap-server",
+    "content:watch": "npx chokidar \"content/posts/**/*.md\" -c \"node scripts/content-build.mjs\"",
+    "dev:cms": "npm run build && npx concurrently \"npm:decap\" \"npm:serve\"",
+    "dev:cms:watch": "npx concurrently \"npm:content:watch\" \"npm:decap\" \"npm:serve\""
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -70,6 +76,8 @@
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
     "gray-matter": "^4.0.3",
-    "marked": "^12.0.2"
+    "marked": "^12.0.2",
+    "concurrently": "^8.2.2",
+    "chokidar-cli": "^3.0.0"
   }
 }

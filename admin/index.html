@@ -7,7 +7,16 @@
     <meta http-equiv="Cache-Control" content="no-store" />
   </head>
   <body>
-    <script>window.CMS_MANUAL_INIT = true;</script>
+    <script>
+    // Normalize both "#access_token=..." and "#/access_token=..." for Decap
+    (function(){
+      var h = location.hash || "";
+      if (h.startsWith("#access_token=")) {
+        location.replace("#/access_token=" + h.slice("#access_token=".length+1));
+      }
+    })();
+    window.CMS_MANUAL_INIT = true;
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
       (function () {

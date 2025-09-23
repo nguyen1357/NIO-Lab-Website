@@ -30,7 +30,7 @@ export const onRequestGet: PagesFunction = async ({ request, env }) => {
         }
       }catch(e){}
       // Decap expects "#/access_token="
-      window.location.replace('/admin/#/access_token=' + '${token}');
+      window.location.replace('/admin/#access_token=' + '${token}');
     })();
   </script>`;
   return new Response(html, { headers: { 'Content-Type': 'text/html; charset=utf-8' } });

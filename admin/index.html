@@ -1,12 +1,6 @@
 <!doctype html>
 <html>
   <head>
-    <title>NIO Lab</title>
-    <meta name="application-name" content="NIO Lab">
-    <meta name="apple-mobile-web-app-title" content="NIO Lab">
-    <meta property="og:site_name" content="NIO Lab">
-    <meta property="og:title" content="NIO Lab">
-    <meta name="twitter:title" content="NIO Lab">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Content Manager</title>
@@ -15,10 +9,12 @@
   <body>
     <script>
       (function(){
+        // normalize token fragment
         var h = location.hash || "";
         if (h.startsWith("#/access_token=")) {
           location.replace("#access_token=" + h.slice("#/access_token=".length));
         }
+        // clear netlify leftovers
         try {
           ["netlifySiteURL","netlifyAuth","netlify-cms-user",
            "decap-cms-app","decap-cms-user","cms","netlify-cms-app"]

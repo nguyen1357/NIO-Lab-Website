@@ -50,7 +50,7 @@ export default function CommonFooter() {
               </div>
               
               <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
-                Advancing the frontiers of light-matter interactions at the nanoscale through innovative research and education.
+                We fabricate optoelectronic devices, simulate and measure photonic structures, and embrace theoretical research as a crucial pillar in deepening our understanding of light-matter interactions.
               </p>
               
               <div className="space-y-3">

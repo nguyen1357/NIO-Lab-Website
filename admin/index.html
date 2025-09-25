@@ -7,62 +7,55 @@
     <meta http-equiv="Cache-Control" content="no-store" />
   </head>
   <body>
-  <script>
-    // Normalize both fragment formats to '#access_token=' for Decap
-    (function () {
-      var h = location.hash || "";
-      if (h.startsWith("#/access_token=")) {
-        location.replace("#access_token=" + h.slice("#/access_token=".length));
-      }
-      try {
-        // Purge any cached Netlify/Decap app state so it won't hit api.netlify.com
-        [
-          "netlifySiteURL","netlifyAuth","netlify-cms-user",
-          "decap-cms-app","decap-cms-user","cms","netlify-cms-app"
-        ].forEach(function(k){ localStorage.removeItem(k); });
-      } catch(e) {}
-      // Ensure no identity widget interferes
-      try { window.netlifyIdentity = undefined; } catch(e) {}
-      window.CMS_MANUAL_INIT = true;
-    })();
-  </script>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  <script>
-    (function () {
-      var cfg = {
-        load_config_file: false,
-        backend: {
-          name: "github",
-          repo: "nguyen1357/NIO-Lab-Website",
-          branch: "main",
-          base_url: window.location.origin,
-          auth_endpoint: "/api/auth"
-        },
-        site_domain: window.location.hostname,
-        media_folder: "uploads",
-        public_folder: "/uploads",
-        collections: [
-          {
-            name: "posts",
-            label: "Posts",
-            folder: "content/posts",
-            create: true,
-            slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-            fields: [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Date", name: "date", widget: "datetime" },
-              { label: "Type", name: "type", widget: "select", options: ["News","Event","Update"] },
-              { label: "Description", name: "description", widget: "text", required: false },
-              { label: "External Link", name: "link", widget: "string", required: false },
-              { label: "Body", name: "body", widget: "markdown" }
-            ]
-          }
-        ]
-      };
-      // Manual init so Decap *must* use GitHub backend above
-      CMS.init({ config: cfg });
-    })();
-  </script>
-</body>
-
+    <script>
+      (function(){
+        var h = location.hash || "";
+        if (h.startsWith("#/access_token=")) {
+          location.replace("#access_token=" + h.slice("#/access_token=".length));
+        }
+        try {
+          ["netlifySiteURL","netlifyAuth","netlify-cms-user",
+           "decap-cms-app","decap-cms-user","cms","netlify-cms-app"]
+           .forEach(k => localStorage.removeItem(k));
+        } catch(e){}
+        window.CMS_MANUAL_INIT = true;
+      })();
+    </script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      (function(){
+        const config = {
+          load_config_file: false,
+          backend: {
+            name: "github",
+            repo: "nguyen1357/NIO-Lab-Website",
+            branch: "main",
+            base_url: window.location.origin,
+            auth_endpoint: "/api/auth"
+          },
+          site_domain: window.location.hostname,
+          media_folder: "uploads",
+          public_folder: "/uploads",
+          collections: [
+            {
+              name: "posts",
+              label: "Posts",
+              folder: "content/posts",
+              create: true,
+              slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+              fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Date", name: "date", widget: "datetime" },
+                { label: "Type", name: "type", widget: "select", options: ["News","Event","Update"] },
+                { label: "Description", name: "description", widget: "text", required: false },
+                { label: "External Link", name: "link", widget: "string", required: false },
+                { label: "Body", name: "body", widget: "markdown" }
+              ]
+            }
+          ]
+        };
+        CMS.init({ config });
+      })();
+    </script>
+  </body>
 </html>

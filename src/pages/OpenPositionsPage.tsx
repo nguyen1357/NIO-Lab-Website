@@ -85,7 +85,7 @@ export default function OpenPositionsPage() {
             <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Research Assistant</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Research Assistant - Interdisciplinary Science and Engineering</h3>
                   <p className="text-blue-600 font-medium">Always Open</p>
                 </div>
                 <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
@@ -93,7 +93,7 @@ export default function OpenPositionsPage() {
                 </span>
               </div>
               <p className="text-gray-600 mb-4">
-                We are constantly looking for research assistants. Applicants who hold domestic (Vietnamese) or international degrees are all eligible for applications. Please do not hesitate to send me an inquiry about the positions if you want to learn and conduct research in such interdisciplinary works ranging from Physics, Chemistry, Engineering Physics, Chemical Engineering, Electrical Engineering, and Mechanical Engineering. Students who are about to graduate or hold B.Sc or M.Sc in these fields are also encouraged to apply. Further information can be obtained at <strong>info.niolab@gmail.com</strong>.
+                We are actively seeking passionate and motivated research assistants to join our interdisciplinary research team. Applicants with domestic (Vietnamese) or international degrees are welcome to apply. Our research spans a wide range of fields, including Physics, Chemistry, Engineering Physics, Chemical Engineering, Electrical Engineering, and Mechanical Engineering. We encourage applications from students who are nearing graduation or who already hold a B.Sc. or M.Sc. in any of these disciplines. This is an excellent opportunity for individuals eager to deepen their research experience and contribute to cutting-edge scientific work. Our mission is to train research assistants to become competitive candidates for Ph.D. programs at top global universities and to prepare them for careers as leading educators in academia. If you are interested in learning more or applying, please don’t hesitate to reach out. We welcome inquiries and look forward to hearing from aspiring researchers who share our enthusiasm for scientific discovery and academic excellence. Contact us <strong>info.niolab@gmail.com</strong>.
               </p>
               <p className="text-sm text-gray-500 mb-4">
                 <strong>Posted:</strong> September 14, 2025
@@ -181,7 +181,7 @@ export default function OpenPositionsPage() {
                 </div>
                 <h3 className="text-xl font-bold">NIO-Lab</h3>
               </div>
-              <p className="text-gray-400">© 2023 Nanophotonics Integration in Optoelectronics Laboratory</p>
+              <p className="text-gray-400">© 2025 Nanophotonics Integration in Optoelectronics Laboratory</p>
             </div>
             
             <div className="flex space-x-6">

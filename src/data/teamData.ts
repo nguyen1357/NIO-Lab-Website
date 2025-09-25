@@ -83,8 +83,8 @@ export const teamData: TeamData = {
     },
     {
       name: "Dr. Nguyen Hung Son",
-      role: "Full-time Researcher",
-      research: "Theory of nanophotonics",
+      role: "Emeritus professor",
+      research: "Theory of electromagnetics and nanophotonics",
       joinDate: "September 2024",
       bio: "Dr. Son is an emeritous professor of theoretical physics.",
       imageUrl: "https://i.postimg.cc/FRht7V8Z/plaincolor-JPG.jpg"
@@ -167,7 +167,7 @@ export const teamData: TeamData = {
       research: "Perovskite light-emitting diodes",
       email: "22dan.db@vinuni.edu.vn",
       joinDate: "September 2024",
-      imageUrl: "https://i.postimg.cc/FRht7V8Z/plaincolor-JPG.jpg"
+      imageUrl: "https://i.postimg.cc/0jPXrTrP/DBD.jpg"
     },
     {
       name: "Pham Trung Kien, EE Cohort 4",
@@ -215,7 +215,7 @@ export const teamData: TeamData = {
       research: "Perovskite light-emitting diodes",
       email: "24huy.pt@vinuni.edu.vn",
       joinDate: "September 2025",
-      imageUrl: "https://i.postimg.cc/FRht7V8Z/plaincolor-JPG.jpg"
+      imageUrl: "https://i.postimg.cc/MGPqxYGs/zalo_11200539947898.jpg"
     }
   ],
   alumni: {
@@ -223,17 +223,20 @@ export const teamData: TeamData = {
       {
         name: "Tran Gia Khanh",
         role: "Undergraduate Student (EE Cohort 1)",
-        currentPosition: "Master of Electrical Engineering at UPenn"
+        currentPosition: "Master of Electrical Engineering at UPenn",
+        imageUrl: "https://i.postimg.cc/26pKNbDq/TGKhanh.jpg"
       },
       {
         name: "Chu Ha Linh",
         role: "Undergraduate Student (EE Cohort 2)",
-        currentPosition: "Master of Electrical Engineering at UPenn"
+        currentPosition: "Master of Electrical Engineering at UPenn",
+        imageUrl: "https://i.postimg.cc/gcQ0j7LF/CHL.png"
       },
       {
         name: "Luu Dang Khue",
         role: "Undergraduate Student (ME Cohort 2)",
-        currentPosition: "Master of Materials Science at UPenn"
+        currentPosition: "Master of Materials Science at UPenn",
+        imageUrl: "https://i.postimg.cc/nryVWsfc/LDK.jpg"
       }
     ],
     researchAssistants: [
@@ -241,31 +244,36 @@ export const teamData: TeamData = {
         name: "Trinh Quoc Trung",
         role: "Research Assistant",
         duration: "2021-2022",
-        currentPosition: "Ph.D. student at University of Grenoble, France"
+        currentPosition: "Ph.D. student at University of Grenoble, France",
+        imageUrl: "https://i.postimg.cc/QCGprJ7R/TQT.jpg"
       },
       {
         name: "Nguyen Dinh Hai",
         role: "Research Assistant",
         duration: "2022-2023",
-        currentPosition: "STEM teacher at Riverside Education"
+        currentPosition: "STEM teacher at Riverside Education",
+        imageUrl: "https://i.postimg.cc/Jnbdrrrp/NDHai.jpg"
       },
       {
         name: "Nguyen Thi Dieu Linh",
         role: "Research Assistant",
         duration: "2023-2024",
-        currentPosition: "PhD student at Tohoku University, Japan"
+        currentPosition: "PhD student at Tohoku University, Japan",
+        imageUrl: "https://i.postimg.cc/FRht7V8Z/plaincolor-JPG.jpg"
       },
       {
         name: "Bui Xuan Son Hai",
         role: "Research Assistant",
         duration: "2022-2025",
-        currentPosition: "Samsung Electronics, Thai Nguyen"
+        currentPosition: "Samsung Electronics, Thai Nguyen",
+        imageUrl: "https://i.postimg.cc/FRht7V8Z/plaincolor-JPG.jpg"
       },
       {
         name: "Doan Tran Thuy Dung",
         role: "Research Assistant",
         duration: "2024-2025",
-        currentPosition: "PhD student at University of Illinois Urbana-Champaign"
+        currentPosition: "PhD student at University of Illinois Urbana-Champaign",
+        imageUrl: "https://i.postimg.cc/PJDZsJdq/DTTDung.jpg"
       }
     ]
   },

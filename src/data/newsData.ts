@@ -13,9 +13,15 @@ export interface NewsItem {
 
 export const newsData: NewsItem[] = [
   {
-    title: "Welcome two EE students join our team: Tran Dang Khoa and Pham Tien Huy",
+    title: "Welcome to two EE students joining our team: Tran Dang Khoa and Pham Tien Huy",
     date: "10th September 2025",
     type: "New Members"
+  },
+  {
+    title: "Congratulations to our group members: Dinh Bao Dan went to ETH Zurich.",
+    date: "1st September 2025",
+    type: "Go Global",
+    description: "We are proud to announce that our junior undergraduate student, Dinh Bao Dan, has been selected for a paid research internship at ETH Zurich, one of the world's leading institutions in science and engineering. He is the first Vietnamese student to earn this prestigious opportunity directly from Vietnam, representing a historic milestone for our research group and the training quality at VinUniversity. Over the next six months, he will be contributing to advanced research on colloidal-based photodetectors, working alongside leading scientists in the field. This achievement reflects his outstanding dedication, talent, and the growing global presence of young Vietnamese researchers. We celebrate his success and wish him a transformative journey ahead!"
   },
   {
     title: "Our team is delighted to contribute one invited talk and 5 posters at Horizon, 25-28 August 2025",

@@ -243,16 +243,36 @@ export default function TeamSection({ id = "team" }: TeamSectionProps) {
               <div className="transition-all duration-300">
                 {/* Undergraduate Students Alumni */}
                 {activeAlumniSubTab === 'undergraduateStudents' && (
-                  <div className="max-w-4xl mx-auto space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {teamData.alumni.undergraduateStudents.map((alumnus, index) => (
-                      <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <h3 className="text-xl font-bold text-gray-900 mb-1">{alumnus.name}</h3>
-                            <p className="text-blue-600 font-medium mb-2">{alumnus.role}</p>
-                            <div className="flex flex-wrap gap-4 text-sm text-gray-500">
-                              <span>Current: {alumnus.currentPosition}</span>
+                      <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                        <div className="h-48 relative">
+                          <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                            {alumnus.imageUrl ? (
+                              <img 
+                                src={alumnus.imageUrl} 
+                                alt={alumnus.name}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <div className="text-blue-600 text-4xl font-bold">
+                                {alumnus.name.split(' ').map(n => n[0]).join('')}
+                              </div>
+                            )}
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                          <div className="absolute bottom-4 left-4">
+                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xl text-blue-600 shadow-lg">
+                              {alumnus.name.charAt(0)}
                             </div>
+                          </div>
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold text-gray-900 mb-1">{alumnus.name}</h3>
+                          <p className="text-blue-600 font-medium mb-2">{alumnus.role}</p>
+                          <p className="text-gray-600 text-sm mb-3">{alumnus.research || "Undergraduate Research"}</p>
+                          <div className="flex flex-wrap gap-2 text-sm text-gray-500">
+                            <span className="bg-gray-100 px-2 py-1 rounded">Current: {alumnus.currentPosition}</span>
                           </div>
                         </div>
                       </div>
@@ -262,17 +282,37 @@ export default function TeamSection({ id = "team" }: TeamSectionProps) {
                 
                 {/* Research Assistants Alumni */}
                 {activeAlumniSubTab === 'researchAssistants' && (
-                  <div className="max-w-4xl mx-auto space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {teamData.alumni.researchAssistants.map((alumnus, index) => (
-                      <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <h3 className="text-xl font-bold text-gray-900 mb-1">{alumnus.name}</h3>
-                            <p className="text-blue-600 font-medium mb-2">{alumnus.role}</p>
-                            <div className="flex flex-wrap gap-4 text-sm text-gray-500">
-                              <span>Duration: {alumnus.duration}</span>
-                              <span>Current: {alumnus.currentPosition}</span>
+                      <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                        <div className="h-48 relative">
+                          <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                            {alumnus.imageUrl ? (
+                              <img 
+                                src={alumnus.imageUrl} 
+                                alt={alumnus.name}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <div className="text-green-600 text-4xl font-bold">
+                                {alumnus.name.split(' ').map(n => n[0]).join('')}
+                              </div>
+                            )}
+                          </div>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                          <div className="absolute bottom-4 left-4">
+                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-xl text-green-600 shadow-lg">
+                              {alumnus.name.charAt(0)}
                             </div>
+                          </div>
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold text-gray-900 mb-1">{alumnus.name}</h3>
+                          <p className="text-green-600 font-medium mb-2">{alumnus.role}</p>
+                          <p className="text-gray-600 text-sm mb-3">{alumnus.research || "Research Assistant"}</p>
+                          <div className="space-y-2 text-sm text-gray-500">
+                            <div className="bg-gray-100 px-2 py-1 rounded inline-block">Duration: {alumnus.duration}</div>
+                            <div className="bg-gray-100 px-2 py-1 rounded inline-block ml-2">Current: {alumnus.currentPosition}</div>
                           </div>
                         </div>
                       </div>

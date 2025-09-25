@@ -100,7 +100,7 @@ export default function PubsPage() {
                 </div>
                 <h3 className="text-xl font-bold">NIO-Lab</h3>
               </div>
-              <p className="text-gray-400">© 2023 Nanophotonics Integration in Optoelectronics Laboratory</p>
+              <p className="text-gray-400">© 2025 Nanophotonics Integration in Optoelectronics Laboratory</p>
             </div>
             
             <div className="flex space-x-6">

@@ -29,7 +29,6 @@ export const onRequestGet: PagesFunction = async ({ request, env }) => {
           window.opener.postMessage({ token: '${data.access_token}' }, '*');
         }
       }catch(e){}
-      // Decap expects "#/access_token="
       window.location.replace('/admin/#access_token=' + '${token}');
     })();
   </script>`;

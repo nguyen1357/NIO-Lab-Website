@@ -1,4 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8" /><script>
+<!doctype html><html lang="en"><head>
+<title>NIO Lab</title><meta charset="UTF-8" />
+<script>
+(function(){
+  const WANTED = "NIO Lab";
+  function ensureTitle(){
+    if(!document.querySelector("title")){
+      const t=document.createElement("title");
+      document.head.appendChild(t);
+    }
+    if(document.title!==WANTED) document.title=WANTED;
+  }
+  ensureTitle();
+  const target = document.querySelector("title") || document.head;
+  new MutationObserver(ensureTitle).observe(target, {subtree:true, childList:true, characterData:true});
+  window.addEventListener("DOMContentLoaded", ensureTitle);
+})();
+</script>
+<script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));
 }

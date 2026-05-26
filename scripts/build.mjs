@@ -18,7 +18,7 @@ const esbuildOpts = {
   color: true,
   entryPoints: isProd ? ['src/main.tsx'] : ['src/main.tsx', 'index.html'],
   outdir: 'dist',
-  entryNames: isProd ? '[name]-[hash]' : '[name]',
+  entryNames: isProd ? '[name][hash]' : '[name]',
   metafile: isProd,
   write: true,
   bundle: true,
@@ -54,7 +54,7 @@ if (isProd) {
 
   // Drop superseded root bundles so stale hashes don't linger in the deploy.
   for (const f of await readdir('.')) {
-    if (/^main-.*\.(js|css)$/.test(f) && f !== jsName && f !== cssName) {
+    if (/^main-?[A-Za-z0-9]+\.(js|css)$/.test(f) && f !== jsName && f !== cssName) {
       await unlink(f)
     }
   }
@@ -63,8 +63,8 @@ if (isProd) {
   if (cssOut) await copyFile(cssOut, cssName)
 
   let html = await readFile('index.html', 'utf8')
-  html = html.replace(/main-[A-Za-z0-9]+\.js/g, jsName)
-  if (cssName) html = html.replace(/main-[A-Za-z0-9]+\.css/g, cssName)
+  html = html.replace(/main-?[A-Za-z0-9]+\.js/g, jsName)
+  if (cssName) html = html.replace(/main-?[A-Za-z0-9]+\.css/g, cssName)
   await writeFile('index.html', html)
 
   console.log(`Published ${jsName}${cssName ? ` and ${cssName}` : ''}; index.html updated.`)

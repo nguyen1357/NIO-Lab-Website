@@ -95,7 +95,7 @@ export const publicationsData: PublicationsData = {
       title: "Ag-Induced Phase and Defect Engineering of Co-Evaporated Sb2Se3 Thin Films for Enhanced Photovoltaic Performance",
       authors: "Hoang Van-Quy, Lee J, Kadiri-English B, Cho E, Ali A, Kumar N, Gilshtein E, ...",
       journal: "Energy & Environmental Materials",
-      volume: "9",
+      volume: "-",
       page: "e70322",
       year: "2026"
     },

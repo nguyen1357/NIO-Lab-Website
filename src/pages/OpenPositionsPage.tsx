@@ -62,33 +62,70 @@ export default function OpenPositionsPage() {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Master Students</h3>
-                  <p className="text-blue-600 font-medium">Perovskite tandem solar cells, Inorganic thin-film Sb2X3 solar cells, and Perovskite LEDs (PeLEDs)</p>
+                  <p className="text-blue-600 font-medium">Perovskite tandem solar cells</p>
                 </div>
                 <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
                   Open
                 </span>
               </div>
               <p className="text-gray-600 mb-4">
-              Our research group is seeking 03 motivated Master students to join the Projects: Perovskite tandem solar cells, Inorganic thin-film Sb2X3 solar cells, and Perovskite LEDs (PeLEDs). The details are provided as below:
-              Title: Master Student in Perovskite Tandem Solar Cell (01)_ PI: Dr. Le Van Quynh 
-              Abstract: The research will involve material synthesis, thin-film deposition, device fabrication, and advanced characterization of photovoltaic devices.  Master student will join project focused on Perovskite tandem solar cells. Students will gain hands-on experience with modern fabrication techniques and collaborate in an interdisciplinary environment aimed at developing high-efficiency and stable solar cells. Candidates with a background in materials science, physics, chemistry, or energy engineering are highly encouraged to apply. 
-              Salary range: 10-13M/month
-              ____________
-              Title: Master Student in Sb₂Se₃ Thin-Film Solar Cell (01)_PI: Dr. Hoang Van Quy
-              Abstract: Our research group is seeking motivated Master students to work on Sb₂Se₃ thin-film solar cells, a promising inorganic photovoltaic technology for low-cost and high-efficiency solar energy conversion. The research will focus on thin-film deposition, materials engineering, interface optimization, and photovoltaic device fabrication and characterization. Students will gain hands-on experience with advanced techniques for semiconductor processing and solar cell performance analysis. Applicants with backgrounds in materials science, physics, chemistry, electrical engineering, or related fields are encouraged to apply.
-              Salary range: 10-13M/month
-              _____________
-              Title: Master Positions in Perovskite LED Research (01)_ PI: Dr. Le Van Quynh
-              Abstract: We are recruiting Master students to work on perovskite light-emitting diodes (PeLEDs). The research focuses on perovskite quantum dot materials, thin-film fabrication, device engineering, and optical characterization for next-generation lighting and display technologies. Students with backgrounds in materials science, physics, chemistry, or electronics are welcome.
-              Salary range: 10-13M/month
-
-              For further information, contact Dr. Hoang Van Quy for support: <strong>quy.hv@vinuni.edu.vn, 0967-792-193</strong>
+              Our research group is seeking motivated Master Students to join the Projects: Perovskite Tandem Solar Cell (01)_ PI: Dr. Le Van Quynh. The research will involve material synthesis, thin-film deposition, device fabrication, and advanced characterization of photovoltaic devices.  Master student will join project focused on Perovskite tandem solar cells. Students will gain hands-on experience with modern fabrication techniques and collaborate in an interdisciplinary environment aimed at developing high-efficiency and stable solar cells. Candidates with a background in materials science, physics, chemistry, or energy engineering are highly encouraged to apply. For further information, contact Dr. Hoang Van Quy for support: <strong>quy.hv@vinuni.edu.vn, 0967-792-193</strong>
               </p>
               <p className="text-sm text-gray-500 mb-4">
                 <strong>Posted:</strong> March 9, 2026
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded">PhD training in optics and photonics</span>
+                <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded">Salary range: 10-13M/month</span>
+              </div>
+              <button className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                Learn more <ChevronRight className="w-4 h-4 ml-1" />
+              </button>
+            </div>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+                        <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Master Students</h3>
+                  <p className="text-blue-600 font-medium">Inorganic thin-film Sb2X3 solar cells</p>
+                </div>
+                <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+                  Open
+                </span>
+              </div>
+              <p className="text-gray-600 mb-4">
+              Our research group is seeking motivated Master students to work on the Projects: Sb₂Se₃ Thin-Film Solar Cell (01)_PI: Dr. Hoang Van Quy, a promising inorganic photovoltaic technology for low-cost and high-efficiency solar energy conversion. The research will focus on thin-film deposition, materials engineering, interface optimization, and photovoltaic device fabrication and characterization. Students will gain hands-on experience with advanced techniques for semiconductor processing and solar cell performance analysis. Applicants with backgrounds in materials science, physics, chemistry, electrical engineering, or related fields are encouraged to apply. For further information, contact Dr. Hoang Van Quy for support: <strong>quy.hv@vinuni.edu.vn, 0967-792-193</strong>
+              </p>
+              <p className="text-sm text-gray-500 mb-4">
+                <strong>Posted:</strong> March 9, 2026
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded">Salary range: 10-13M/month</span>
+              </div>
+              <button className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                Learn more <ChevronRight className="w-4 h-4 ml-1" />
+              </button>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-8">
+                        <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Master Students</h3>
+                  <p className="text-blue-600 font-medium">Perovskite LEDs (PeLEDs)</p>
+                </div>
+                <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+                  Open
+                </span>
+              </div>
+              <p className="text-gray-600 mb-4">
+              Our research group is seeking motivated Master Students for Master Positions in the Projects: Perovskite LED Research (01)_ PI: Dr. Le Van Quynh. We are recruiting Master students to work on perovskite light-emitting diodes (PeLEDs). The research focuses on perovskite quantum dot materials, thin-film fabrication, device engineering, and optical characterization for next-generation lighting and display technologies. Students with backgrounds in materials science, physics, chemistry, or electronics are welcome. For further information, contact Dr. Hoang Van Quy for support: <strong>quy.hv@vinuni.edu.vn, 0967-792-193</strong>
+              </p>
+              <p className="text-sm text-gray-500 mb-4">
+                <strong>Posted:</strong> March 9, 2026
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded">Salary range: 10-13M/month</span>
               </div>
               <button className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
                 Learn more <ChevronRight className="w-4 h-4 ml-1" />

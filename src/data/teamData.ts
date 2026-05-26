@@ -86,8 +86,8 @@ export const teamData: TeamData = {
       role: "Postdoctoral Researcher",
       research: "Semiconductor Thin film for Intelligent Optoelectronic Devices",
       education: {
-        bsc: "BSc: Materials Science and Engineering, Hanoi University of Science and Technology (2020)",
-        msc: "MSc: Department of Energy Science, Sungkyunkwan University (2025)"
+        phd: "Ph.D: Department of Energy Science, Sungkyunkwan University (2025)",
+        bsc: "BSc: Materials Science and Engineering, Hanoi University of Science and Technology (2020)"
       },
       email: "dat.vk@vinuni.edu.vn",
       joinDate: "January 2026",
@@ -98,12 +98,14 @@ export const teamData: TeamData = {
       role: "Postdoctoral Researcher",
       research: "Theoretical design & analysis topological photonic crystals",
       education: {
-        bsc: "BSc: Materials Science and Engineering, Hanoi University of Science and Technology (2020)",
-        msc: "MSc: Department of Energy Science, Sungkyunkwan University (2025)"
+        phd: "Ph.D: Nanotechnology for Sustainable Energy, Kwansei Gakuin University (2023)",
+        msc: "MSc: Physics, Kwansei Gakuin University (2020)",
+        bsc: "BSc: Physics (Talented Program), Vietnam National University - University of Science (2018)"
+
       },
       email: "huyen.pt@vinuni.edu.vn",
       joinDate: "January 2026",
-      imageUrl: "https://i.postimg.cc/L4TTXM5m/Vu-Khac-Dat.png"
+      imageUrl: ""
     },
     {
       name: "Dr. Nguyen Hung Son",
@@ -154,8 +156,8 @@ export const teamData: TeamData = {
       role: "Research Assistant",
       research: "Electromagnetic Interference (EMI) shielding materials, Perovskite Light emitting diodes (PeLEDs)",
       education: {
-        bsc: "BSc: Physics, Vietnam National University - University of Science (2021)",
-        msc: "MSc: Electrical Engineering, Chungnam National University (2025)"
+        msc: "MSc: Electrical Engineering, Chungnam National University (2025)",
+        bsc: "BSc: Physics, Vietnam National University - University of Science (2021)"
       },
       email: "khanh.nn5@vinuni.edu.vn",
       joinDate: "February 2026",

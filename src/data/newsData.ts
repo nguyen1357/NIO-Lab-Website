@@ -21,7 +21,7 @@ export const newsData: NewsItem[] = [
   {
     title: "Congratulations to Dr. Hoang Van Quy on being awarded a research grant from NAFOSTED!",
     date: "December 2025",
-    type: "Award"
+    type: "Award",
     description: "This project focuses on advancing the efficiency of inorganic solar cells, contributing to cutting-edge research in next-generation photovoltaic technologies."
   },
   {

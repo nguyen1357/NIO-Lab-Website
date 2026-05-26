@@ -82,6 +82,30 @@ export const teamData: TeamData = {
       imageUrl: "https://i.postimg.cc/fRzV1Cmh/Quyjpg.jpg"
     },
     {
+      name: "Vu Khac Dat",
+      role: "Postdoctoral Researcher",
+      research: "Semiconductor Thin film for Intelligent Optoelectronic Devices",
+      education: {
+        bsc: "BSc: Materials Science and Engineering, Hanoi University of Science and Technology (2020)",
+        msc: "MSc: Department of Energy Science, Sungkyunkwan University (2025)"
+      },
+      email: "dat.vk@vinuni.edu.vn",
+      joinDate: "January 2026",
+      imageUrl: "https://i.postimg.cc/L4TTXM5m/Vu-Khac-Dat.png"
+    },
+        {
+      name: "Phan Thanh Huyen",
+      role: "Postdoctoral Researcher",
+      research: "Theoretical design & analysis topological photonic crystals",
+      education: {
+        bsc: "BSc: Materials Science and Engineering, Hanoi University of Science and Technology (2020)",
+        msc: "MSc: Department of Energy Science, Sungkyunkwan University (2025)"
+      },
+      email: "huyen.pt@vinuni.edu.vn",
+      joinDate: "January 2026",
+      imageUrl: "https://i.postimg.cc/L4TTXM5m/Vu-Khac-Dat.png"
+    },
+    {
       name: "Dr. Nguyen Hung Son",
       role: "Emeritus professor",
       research: "Theory of electromagnetics and nanophotonics",
@@ -101,29 +125,6 @@ export const teamData: TeamData = {
       email: "anh.nv3@vinuni.edu.vn",
       joinDate: "August 2023",
       imageUrl: "https://i.postimg.cc/FRht7V8Z/plaincolor-JPG.jpg"
-    },
-    {
-      name: "Le Huyen Trang",
-      role: "Research Assistant",
-      research: "Interactions between metasurface/photonic crystals and perovskite nanocrystals",
-      education: {
-        bsc: "BSc: Physics, Hanoi National University of Education (2024)"
-      },
-      email: "trang.lh@vinuni.edu.vn",
-      joinDate: "April 2024",
-      imageUrl: "https://i.postimg.cc/XvfSjzHq/trang.jpg"
-    },
-    {
-      name: "Bui Minh Quan",
-      role: "Research Assistant",
-      research: "Interactions between metasurface/photonic crystals and perovskite nanocrystals",
-      education: {
-        msc: "MSc: Advanced Materials and Nanotechnologies, USTH, Hanoi (2025)",
-        bsc: "BSc: Physics, Hanoi National University of Education (2023)"
-      },
-      email: "quan.bm@vinuni.edu.vn",
-      joinDate: "August 2025",
-      imageUrl: "https://i.postimg.cc/CL65trfq/team-member-3.jpg"
     },
     {
       name: "Nguyen Thi Ben",
@@ -149,16 +150,17 @@ export const teamData: TeamData = {
       imageUrl: "https://i.postimg.cc/zGXy43N2/uyen5jpg.jpg"
     },
     {
-      name: "Le Minh Khanh",
+      name: "Nguyen Nam Khanh",
       role: "Research Assistant",
-      research: "Perovskite-based optoelectronic and electronic devices",
+      research: "Electromagnetic Interference (EMI) shielding materials, Perovskite Light emitting diodes (PeLEDs)",
       education: {
-        bsc: "BSc: Engineering Physics, Hanoi University of Science and Technology (2025)"
+        bsc: "BSc: Physics, Vietnam National University - University of Science (2021)",
+        msc: "MSc: Electrical Engineering, Chungnam National University (2025)"
       },
-      email: "khanh.lm@vinuni.edu.vn",
-      joinDate: "August 2025",
-      imageUrl: "https://i.postimg.cc/NjhN4qw0/khanh5jpg.jpg"
-    }
+      email: "khanh.nn5@vinuni.edu.vn",
+      joinDate: "February 2026",
+      imageUrl: "https://i.postimg.cc/2jww6fyr/Nguyen-Nam-Khanh.jpg"
+    }   
   ],
   undergraduateStudents: [
     {

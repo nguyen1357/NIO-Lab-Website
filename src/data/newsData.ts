@@ -13,6 +13,18 @@ export interface NewsItem {
 
 export const newsData: NewsItem[] = [
   {
+    title: "Congratulations to our group members: Nguyen Dinh Phong, Tran Dang Khoa, Pham Trung Kien went to Italy for Internship.",
+    date: "January 2026",
+    type: "Go Global",
+    description: "We are proud to announce that our undergraduate members, Nguyen Dinh Phong, Tran Dang Khoa, and Pham Trung Kien has been selected for an internship in Italy..."
+  },
+  {
+    title: "Congratulations to Dr. Hoang Van Quy on being awarded a research grant from NAFOSTED!",
+    date: "December 2025",
+    type: "Award"
+    description: "This project focuses on advancing the efficiency of inorganic solar cells, contributing to cutting-edge research in next-generation photovoltaic technologies."
+  },
+  {
     title: "Welcome to two EE students joining our team: Tran Dang Khoa and Pham Tien Huy",
     date: "10th September 2025",
     type: "New Members"

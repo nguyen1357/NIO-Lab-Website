@@ -82,7 +82,6 @@ export default function OpenPositionsPage() {
               </button>
             </div>
 
-          <div className="max-w-4xl mx-auto space-y-8">
                         <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -107,7 +106,6 @@ export default function OpenPositionsPage() {
               </button>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-8">
                         <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-4">
                 <div>

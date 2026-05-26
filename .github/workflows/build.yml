@@ -1,0 +1,44 @@
+name: Build and publish bundle
+
+# Rebuilds the production bundle whenever source changes land on main and
+# commits the result back, so editing data files is enough to update the site.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-main
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Skip the workflow's own "[skip ci]" commit so it doesn't loop.
+    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip ci]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Commit and push rebuilt bundle
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Bundle already up to date; nothing to commit."
+          else
+            git commit -m "Rebuild bundle [skip ci]"
+            git push
+          fi

@@ -74,7 +74,47 @@ export const publicationsData: PublicationsData = {
       volume: "15",
       page: "11291",
       year: "2024"
-    }
+    },
+    {
+      title: "Generalized non-Hermitian Hamiltonian for guided resonances in photonic crystal slabs",
+      authors: "Nguyen Viet Anh, Nguyen Hung Son, Yuan Zhiyi, Nguyen Dung Xuan, Dang Cuong, Ha Son Tung, Letartre Xavier, Le-Van Quynh, Nguyen Hai Son",
+      journal: "Nanophotonics",
+      volume: "14",
+      page: "5229-5250",
+      year: "2025"
+    },
+    {
+      title: "Progress in synthesis of Ti3C2Tx MXene-based nanostructures for energy harvesting and storage: A review",
+      authors: "Kumar Naveen, Hoang Quy-Van, Belal Mohamed Ahmed, Kaja Kushal Ruthvik, Nguyen Phi Hung, Le-Van Quynh, Vo Vien, Linh Vo Thi Thuy, Nguyen Phan Khanh Thinh, Ta Qui Thanh Hoai",
+      journal: "Journal of Science: Advanced Materials and Devices",
+      volume: "10",
+      page: "101034",
+      year: "2025"
+    },
+    {
+      title: "Ag-Induced Phase and Defect Engineering of Co-Evaporated Sb2Se3 Thin Films for Enhanced Photovoltaic Performance",
+      authors: "Hoang Van-Quy, Lee J, Kadiri-English B, Cho E, Ali A, Kumar N, Gilshtein E, ...",
+      journal: "Energy & Environmental Materials",
+      volume: "9",
+      page: "e70322",
+      year: "2026"
+    },
+    {
+      title: "Strategies to Improve the Performances of Perovskite Solar Cells with Spiro-OMeTAD as HTM: A Comprehensive Review",
+      authors: "Hoang Van-Quy, Kumar Naveen, Huy Vo Pham Hoang, Le-Minh Khanh, Le-Van Quynh, Tran Hai Le, Do Ha Huu, Bui Vu Khac Hoang",
+      journal: "Journal of Science: Advanced Materials and Devices",
+      volume: "11",
+      page: "101131",
+      year: "2026"
+    },
+    {
+      title: "Growth behavior and interface engineering for photovoltaic applications of co-evaporated Sb2Se3 thin films on Mo foil",
+      authors: "Hoang Van-Quy, Park Sinae, Lee Jaebaek, Son Dae-Ho, Hwang Dae-Kue, Le-Van Quynh, Huy Vo Pham Hoang, Kim Se Yun, Yang Kee-Jeong, Kang Jin-Kyu, Sung Shi-Joon, Kim Dae-Hwan",
+      journal: "Journal of Materials Chemistry A",
+      volume: "14",
+      page: "5831-5841",
+      year: "2026"
+    },
   ],
   priorToVinUniversity: [
     {

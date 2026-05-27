@@ -56,7 +56,7 @@ export default function NewsPage() {
                     </span>
                     <h3 className="text-lg font-bold text-gray-900 mt-3 mb-2">{item.title}</h3>
                     {item.description && (
-                      <p className="text-gray-600 mb-4">{item.description}</p>
+                      <p className="text-gray-600 mb-4 whitespace-pre-line">{item.description}</p>
                     )}
                   </div>
                   <div className="flex items-center text-gray-500">

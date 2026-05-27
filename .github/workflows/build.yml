@@ -2,6 +2,9 @@ name: Build and publish bundle
 
 # Rebuilds the production bundle whenever source changes land on main and
 # commits the result back, so editing data files is enough to update the site.
+# The push is made with the default GITHUB_TOKEN, which by design does NOT
+# trigger another workflow run, so no "[skip ci]" guard is needed (and adding
+# one would make Cloudflare Pages skip deploying the rebuilt bundle).
 
 on:
   push:
@@ -17,8 +20,6 @@ concurrency:
 
 jobs:
   build:
-    # Skip the workflow's own "[skip ci]" commit so it doesn't loop.
-    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip ci]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,6 +40,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Bundle already up to date; nothing to commit."
           else
-            git commit -m "Rebuild bundle [skip ci]"
+            git commit -m "Rebuild bundle"
             git push
           fi

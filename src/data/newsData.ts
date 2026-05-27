@@ -13,10 +13,10 @@ export interface NewsItem {
 
 export const newsData: NewsItem[] = [
   {
-    title: "Congratulations to our group members: Nguyen Dinh Phong, Tran Dang Khoa, Pham Trung Kien went to Italy for Internship.",
+    title: "Congratulations to our group members: Nguyen Dinh Phong, Tran Dang Khoa, Pham Trung Kien went to the Polytechnic University of Bari (Italy).",
     date: "January 2026",
     type: "Go Global",
-    description: "We are proud to announce that our undergraduate members, Nguyen Dinh Phong, Tran Dang Khoa, and Pham Trung Kien has been selected for an internship in Italy..."
+    description: "We are proud to announce that our undergraduate members, Nguyen Dinh Phong, Tran Dang Khoa, and Pham Trung Kien have successfully completed their international research training programs at the Polytechnic University of Bari (Poliba) in Italy. This mobility program reflects the steady commitment of our students to learning and collaborating within global academic environments.\n\nTogether, they spent three months focusing on nanophotonics research within Poliba's Department of Electrical and Information Engineering in Puglia. Working under the guidance of Prof. Francesco Dell'Olio, they contributed to the design and optimization of dielectric metasurface geometries, specifically studying quasi-bound states in the continuum (qBIC).\n\nBy setting up a 3D full-wave numerical simulation framework in COMSOL Multiphysics with over 186,000 degrees of freedom, he worked on resolving narrow electromagnetic resonances. Their efforts focused on modeling a high-index TiO2 nanopillar system aimed at achieving a low lasing threshold of 1 kW/cm^2, with their data analysis serving as a helpful proof of concept for an ERC proposal.\n\nThe shared experiences of Pham Trung Kien, Nguyen Dinh Phong, and Tran Dang Khoa mark a meaningful step forward for our research group. Their dedication shows how undergraduate students can step out of their comfort zones to learn, contribute, and collaborate meaningfully with international peers. We congratulate them on completing this chapter and look forward to seeing how they apply these new skills to their ongoing work back home."
   },
   {
     title: "Congratulations to Dr. Hoang Van Quy on being awarded a research grant from NAFOSTED!",

@@ -104,8 +104,8 @@ export const teamData: TeamData = {
 
       },
       email: "huyen.pt@vinuni.edu.vn",
-      joinDate: "January 2026",
-      imageUrl: ""
+      joinDate: "April 2026",
+      imageUrl: "https://i.postimg.cc/kgrnb908/Phan-Thanh-Huyen.jpg"
     },
     {
       name: "Dr. Nguyen Hung Son",
